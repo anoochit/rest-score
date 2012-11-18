@@ -7,13 +7,13 @@ Service provide leaderboard, use REST push appkey to get leaderboard score for g
 Services
 -------------
 
-Service | Method | URI | Data 
------------- | ------------- | -------------  | -------------
-SignUp  |  POST | /score/user/signup.json | email, password return pubkey
-SignIn | POST | /score/user/signin.json | email, password return sesskey
-Register App | POST | /score/application/register.json | appname, package, sesskey return appkey
-Post Score | POST | /score/score/post.json | name, score, appkey return code
-Leader Board | POST | /score/leaderboard.json | appkey, number return data
+Service | Method | URI | Data | Retrun
+------------ | ------------- | -------------  | ------------- | -------------
+SignUp  |  POST | /score/user/signup.json | email, password | pubkey
+SignIn | POST | /score/user/signin.json | email, password | sesskey
+Register App | POST | /score/application/register.json | appname, package, sesskey | appkey
+Post Score | POST | /score/score/post.json | name, score, appkey | data
+Leader Board | POST | /score/leaderboard.json | appkey, number | data
 
 Tools
 ----------------
