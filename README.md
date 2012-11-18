@@ -13,7 +13,7 @@ SignUp  |  POST | /score/user/signup.json | email, password | pubkey
 SignIn | POST | /score/user/signin.json | email, password | sesskey
 Register App | POST | /score/application/register.json | appname, package, sesskey | appkey
 Post Score | POST | /score/score/post.json | name, score, appkey | data
-Leader Board | POST | /score/leaderboard.json | appkey, number | data
+Leader Board | POST | /score/score/leaderboard.json | appkey, number | data
 
 Tools
 ----------------
