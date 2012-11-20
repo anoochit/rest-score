@@ -53,7 +53,7 @@ class ScoreController extends AppController {
 					'fields' => array("Score.name , MAX(Score.score) score "),
 					'Score.appkey' => $appkey,
 					'group' => 'Score.name',
-					'order'=> array('Score.score DESC'),
+					'order'=> array('MAX(Score.score) DESC'),
 					'limit' => 10
 			);
 				
